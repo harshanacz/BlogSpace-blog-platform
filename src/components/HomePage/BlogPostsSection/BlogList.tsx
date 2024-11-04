@@ -48,13 +48,12 @@ const BlogList = () => {
       </div>
 
       <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
-        {blog_data.filter(
-          (blog) => menu === "All" || blog.category === menu
-        ).map((blog) => {
-          return <BlogCard key={blog.id} {...blog} />;
-        })  
-        }
-       </div>
+        {blog_data
+          .filter((blog) => menu === "All" || blog.category === menu)
+          .map((blog) => {
+            return <BlogCard key={String(blog.id)} {...blog} />;
+          })}
+      </div>
     </div>
   );
 };
