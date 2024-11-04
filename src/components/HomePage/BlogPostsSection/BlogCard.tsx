@@ -19,7 +19,7 @@ interface BlogCardProps {
   }) => {
   return (
     <div className="max-w-[330px] sm:max-w-[300px] bg-blue-50 rounded-lg">
-     <Link href={`/blogs/${id}`}>
+     <Link href={`/blog/${id}`}>
 
  
       <img src={image.src} alt={title} className="w-full h-48 object-cover rounded-md" />
