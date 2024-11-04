@@ -6,6 +6,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';  // Import styles for the skeleton
 import BlogPageHeader from '@/components/BlogPage/BlogPageHeader';
 import { StaticImageData } from 'next/image';
+import Footer from '@/components/Footer';
 
 interface BlogPost {
   id: number;
@@ -68,7 +69,7 @@ const BlogPostPage = () => {
           </div>
         </div>
       ) : (
-        <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+        <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg pb-8">
           <div className="mb-4">
             <Skeleton height={288} style={{ borderRadius: '0.5rem' }} />
           </div>
@@ -87,6 +88,8 @@ const BlogPostPage = () => {
           </div>
         </div>
       )}
+<div className='mt-8'></div>
+      <Footer/>
     </div>
   );
 };
