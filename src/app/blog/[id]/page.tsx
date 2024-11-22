@@ -33,10 +33,8 @@ const BlogPostPage = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      fetchBlogData();
-    }, 1000);
-  }, [id]);
+    fetchBlogData();
+  }, [id, fetchBlogData]);
 
   return (
     <div>

@@ -8,7 +8,7 @@ interface BlogCardProps {
   description: string;
   image: StaticImageData;
   category: string;
-  id: any;
+  id: string | number;
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({
