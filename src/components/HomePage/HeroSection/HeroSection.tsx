@@ -9,7 +9,7 @@ const HeroSection = () => {
         <Image
           src={logo}
           alt="logo"
-          width={180}
+          width={130}
           className="w-[130px] sm:w-auto"
         />
         <button className="bg-blue-500 hover:bg-blue-700 text-white text-base font-normal py-3 px-4 rounded-md leading-none">
